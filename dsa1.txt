@@ -1,4 +1,4 @@
- 
+ 01 lab 
 AIM 
 To write a C++ program to implement the List Abstract Data Type (ADT) using arrays and 
 perform insertion, deletion, searching, and traversal operations. 
@@ -17,6 +17,7 @@ display the position if found, else display "Not found".
 8. If Display is chosen, print all elements from index 0 to n-1. 
 9. Repeat steps 4-8 until the user selects Exit. 
 10. Stop the program. 
+
 SOURCE CODE 
 #include <iostream> 
  
@@ -38,12 +39,7 @@ void insert(int val, int pos) {
  
 void del(int pos) { 
  
-Ex.No:1 
-Date: 
-List ADT using arrays – insertion, deletion, searching, and 
-traversal operations 
-Page No:10 
-11 
+ 
  
     if (pos < 0 || pos >= n) { cout << "Invalid position\n"; return; } 
  
@@ -95,8 +91,7 @@ int main() {
  
                 break; 
  
-12 
- 
+
             case 2: 
  
                 cout << "Enter position to delete: "; 
@@ -140,6 +135,7 @@ int main() {
     } 
  
 } 
+
 SAMPLE OUTPUT 
 1.Insert 2.Delete 3.Search 4.Display 5.Exit 
 Enter choice: 1 
@@ -159,19 +155,14 @@ Found at position 1
 1.Insert 2.Delete 3.Search 4.Display 5.Exit 
 Enter choice: 5 
  
- 
- 
- 
- 
- 
- 
- 
+
 RESULT 
 The program successfully performs insertion, deletion, searching, and traversal operations on the 
 list implemented using arrays. 
-14 
+
  
- 
+02 lab
+
 AIM 
 To write a C++ program to implement a Singly Linked List and perform insertion, deletion, 
 searching, and display operations. 
@@ -190,6 +181,7 @@ data; display the position if found.
 data. 
 10. Repeat steps 5-9 until the user selects Exit. 
 11. Stop the program. 
+
 SOURCE CODE 
 #include <iostream> 
  
@@ -307,6 +299,7 @@ int main() {
     } 
  
 } 
+
 SAMPLE OUTPUT 
 1.Insert 2.Delete 3.Search 4.Display 5.Exit 
 Enter choice: 1 
@@ -339,12 +332,14 @@ RESULT
 The program successfully performs insertion, deletion, searching, and display operations on the 
 singly linked list. 
  
-18 
+
  
- 
+ 03 lab
+
 AIM 
 To write a C++ program to implement Stack ADT and Queue ADT using arrays and 
 demonstrate basic operations such as push, pop, enqueue, dequeue, and display. 
+
 PROCEDURE 
 1. Start the program. 
 2. Declare two arrays stackArr[] and queueArr[] along with pointer variables top = -1, front 
@@ -359,6 +354,7 @@ Queue, Exit.
 9. If a Display option is chosen, print all valid elements of the corresponding array. 
 10. Repeat steps 4-9 until the user selects Exit. 
 11. Stop the program. 
+
 SOURCE CODE 
 #include <iostream> 
  
@@ -380,12 +376,6 @@ void push(int val) {
  
 void pop() { 
  
-Ex.No:3 
-Date: 
-Stack ADT and Queue ADT using arrays – push, pop, 
-enqueue, dequeue, and display operations. 
-Page No:18 
-19 
  
     if (top == -1) { cout << "Stack Underflow\n"; return; } 
  
@@ -467,6 +457,7 @@ int main() {
     } 
  
 } 
+
 SAMPLE OUTPUT 
 1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit 
 Enter choice: 1 
@@ -477,9 +468,7 @@ Enter value: 20
 1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit 
 Enter choice: 3 
 Stack: 20 10 
-1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit 
-21 
- 
+1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit  
 Enter choice: 4 
 Enter value: 30 
 1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit 
@@ -488,28 +477,17 @@ Queue: 30
 1.Push 2.Pop 3.Display Stack 4.Enqueue 5.Dequeue 6.Display Queue 7.Exit 
 Enter choice: 7 
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
 RESULT 
 The program successfully performs push, pop, enqueue, dequeue, and display operations using 
 the Stack and Queue implemented with arrays. 
- 
-22 
- 
- 
+
+04 lab 
+
 AIM 
 To write a C++ program to create a Binary Tree and perform tree traversal operations such as 
 Inorder, Preorder, and Postorder traversal. 
+
 PROCEDURE 
 1. Start the program. 
 2. Declare a structure Node containing data, left, and right pointers. 
@@ -525,6 +503,7 @@ right subtree.
 print the root. 
 9. Display the results of all three traversals. 
 10. Stop the program. 
+
 SOURCE CODE 
 #include <iostream> 
  
@@ -545,15 +524,7 @@ Node* newNode(int val) {
     Node* n = new Node; 
  
     n->data = val; 
-Ex.No:4 
-Date: 
-Binary Tree – Inorder, Preorder, and Postorder traversal 
-operation. 
-Page No:22  
- 
-23 
- 
- 
+
     n->left = n->right = nullptr; 
  
     return n; 
@@ -603,9 +574,7 @@ void postorder(Node* root) {
     postorder(root->left); 
  
     postorder(root->right); 
-24 
- 
- 
+
     cout << root->data << " "; 
  
 } 
@@ -633,6 +602,7 @@ int main() {
     return 0; 
  
 } 
+
 SAMPLE OUTPUT 
 Enter number of nodes: 5 
 Enter values: 30 20 40 10 25 
@@ -644,12 +614,13 @@ RESULT
 The program successfully creates the binary tree and displays its Inorder, Preorder, and 
 Postorder traversals for the given values. 
  
-25 
- 
- 
+
+ 05 lab 
+
 AIM 
 To write a C++ program to a Binary Search Tree (BST) and perform insertion, searching, 
 deletion, and traversal operations. 
+
 PROCEDURE 
 1. Start the program. 
 2. Declare a structure Node containing data, left, and right pointers. 
@@ -682,16 +653,7 @@ struct Node {
     Node* right; 
  
 }; 
- 
-Ex.No:5 
-Date: 
-Binary Search Tree (BST) – insertion, searching, deletion, 
-and traversal operations 
-Page No:25 
- 
- 
-26 
- 
+  
 Node* newNode(int val) { 
  
     Node* n = new Node; 
@@ -742,7 +704,6 @@ Node* deleteNode(Node* root, int val) {
  
     else if (val > root->data) root->right = deleteNode(root->right, val); 
  
-27 
  
     else { 
  
@@ -793,9 +754,7 @@ int main() {
             case 2: 
  
                 cout << "Enter value: "; cin >> val; 
- 
-28 
- 
+
                 cout << (search(root, val) ? "Found\n" : "Not Found\n"); 
  
                 break; 
@@ -813,7 +772,9 @@ int main() {
     } 
  
 } 
+
 SAMPLE OUTPUT 
+
 1.Insert 2.Search 3.Delete 4.Inorder Display 5.Exit 
 Enter choice: 1 
 Enter value: 50 
@@ -829,8 +790,7 @@ Inorder: 30 50 70
 1.Insert 2.Search 3.Delete 4.Inorder Display 5.Exit 
 Enter choice: 2 
 Enter value: 30 
-29 
- 
+29  
 Found 
 1.Insert 2.Search 3.Delete 4.Inorder Display 5.Exit 
 Enter choice: 3 
@@ -839,17 +799,7 @@ Enter value: 30
 Enter choice: 4 
 Inorder: 50 70 
 1.Insert 2.Search 3.Delete 4.Inorder Display 5.Exit 
-Enter choice: 5 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+Enter choice: 5
  
  
 RESULT 
